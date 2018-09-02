@@ -81,9 +81,9 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" attributes="0">
                                           <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                          <Component id="Mod1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="inv" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
-                                          <Component id="Mod2" max="32767" attributes="0"/>
+                                          <Component id="pw" max="32767" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
                                           <Component id="clr" max="32767" attributes="0"/>
@@ -184,8 +184,8 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="tan" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                       <Component id="Mod" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                      <Component id="Mod1" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                      <Component id="Mod2" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="inv" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="pw" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -507,7 +507,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ModActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="Mod1">
+        <Component class="javax.swing.JButton" name="inv">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Bell MT" size="13" style="0"/>
@@ -516,10 +516,10 @@
             <Property name="toolTipText" type="java.lang.String" value="+/-"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Mod1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="invActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="Mod2">
+        <Component class="javax.swing.JButton" name="pw">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Bell MT" size="13" style="0"/>
@@ -528,7 +528,7 @@
             <Property name="toolTipText" type="java.lang.String" value="x^y"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Mod2ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pwActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

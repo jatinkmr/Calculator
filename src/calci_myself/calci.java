@@ -62,8 +62,8 @@ public class calci extends javax.swing.JFrame {
         cos = new javax.swing.JButton();
         tan = new javax.swing.JButton();
         Mod = new javax.swing.JButton();
-        Mod1 = new javax.swing.JButton();
-        Mod2 = new javax.swing.JButton();
+        inv = new javax.swing.JButton();
+        pw = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("JKCalculator");
@@ -302,21 +302,21 @@ public class calci extends javax.swing.JFrame {
             }
         });
 
-        Mod1.setFont(new java.awt.Font("Bell MT", 0, 13)); // NOI18N
-        Mod1.setText("+/-");
-        Mod1.setToolTipText("+/-");
-        Mod1.addActionListener(new java.awt.event.ActionListener() {
+        inv.setFont(new java.awt.Font("Bell MT", 0, 13)); // NOI18N
+        inv.setText("+/-");
+        inv.setToolTipText("+/-");
+        inv.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Mod1ActionPerformed(evt);
+                invActionPerformed(evt);
             }
         });
 
-        Mod2.setFont(new java.awt.Font("Bell MT", 0, 13)); // NOI18N
-        Mod2.setText("x^y");
-        Mod2.setToolTipText("x^y");
-        Mod2.addActionListener(new java.awt.event.ActionListener() {
+        pw.setFont(new java.awt.Font("Bell MT", 0, 13)); // NOI18N
+        pw.setText("x^y");
+        pw.setToolTipText("x^y");
+        pw.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Mod2ActionPerformed(evt);
+                pwActionPerformed(evt);
             }
         });
 
@@ -353,9 +353,9 @@ public class calci extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGap(18, 18, 18)
-                                        .addComponent(Mod1)
+                                        .addComponent(inv)
                                         .addGap(43, 43, 43)
-                                        .addComponent(Mod2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addComponent(pw, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(clr, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addGap(18, 18, 18)
@@ -434,8 +434,8 @@ public class calci extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tan, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Mod, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Mod1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Mod2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(inv, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pw, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -662,7 +662,7 @@ public class calci extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ModActionPerformed
 
-    private void Mod1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mod1ActionPerformed
+    private void invActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_invActionPerformed
         String s1,s2;
         double d1,d2 = 0;
         s1= dsply.getText();
@@ -671,16 +671,16 @@ public class calci extends javax.swing.JFrame {
         s2 = String.valueOf(d2);
         dsply.setText(s2);
         // TODO add your handling code here:
-    }//GEN-LAST:event_Mod1ActionPerformed
+    }//GEN-LAST:event_invActionPerformed
 
-    private void Mod2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mod2ActionPerformed
+    private void pwActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pwActionPerformed
         String s1;        
         s1 = dsply.getText();
         fnum = Double.parseDouble(s1);        
         pow = 1;       
         dsply.setText("");
         // TODO add your handling code here:
-    }//GEN-LAST:event_Mod2ActionPerformed
+    }//GEN-LAST:event_pwActionPerformed
 
     /**
      * @param args the command line arguments
@@ -716,8 +716,6 @@ public class calci extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Mod;
-    private javax.swing.JButton Mod1;
-    private javax.swing.JButton Mod2;
     private javax.swing.JButton Sin;
     private javax.swing.JButton add;
     private javax.swing.JButton btnEight;
@@ -736,10 +734,12 @@ public class calci extends javax.swing.JFrame {
     private javax.swing.JTextField dsply;
     private javax.swing.JButton exit;
     private javax.swing.JButton fact;
+    private javax.swing.JButton inv;
     private javax.swing.JButton jButton11;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton log;
     private javax.swing.JButton mult;
+    private javax.swing.JButton pw;
     private javax.swing.JButton sqr;
     private javax.swing.JButton sqt;
     private javax.swing.JButton sub;
